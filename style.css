@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+
+ *{
+    box-sizing: border-box;
+ }
+  
+ body{
+    font-family: 'Mountserrat', sans-serif;
+    background: #E8E2E2;
+    
+  }
+  p{
+    font-size: 40px
+  }
+
+  ul {
+    list-style: none;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1 {
+    color: black
+    
+  }
+  ul{
+    color: black;
+    
+  }
+  button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #B3E5BE
+  }
+
+header{
+    background:no-repeat center/cover url(/home/aluno/aula27.02/assets/montefuji.webp);
+    height: calc(150vh - 160px)
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 90px;
+}
