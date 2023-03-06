@@ -1,57 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+/*comentario no css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+*{ 
+  box-sizing: border-box;
+}
 
- *{
-    box-sizing: border-box;
- }
-  
- body{
-    font-family: 'Mountserrat', sans-serif;
-    background: #E8E2E2;
-    
-  }
-  p{
-    font-size: 40px
-  }
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ECF2FF; /*muda o fundo*/}
 
-  ul {
+ul{ /*lista nao ordenada*/
     list-style: none;
-    font-weight: bold;
-  }
+    font-weight: bold; /*negrito*/
+    color: #000000;
+    font-size: 20px;
+}
 
-  a {
+a{ /*mudar a cor do link*/
     text-decoration: none;
-    color: inherit;
-  }
-  h1 {
-    color: #40513B
-    
-  }
-  ul{
-    color: black;
-    
-  }
-  button{
+    color: inherit;  /*cor do link*/
+}
+
+h1{ /*info em baixo*/
+    color: #2f023d;
+    font-size: 40px;  /*tamanho da fonte*/
+
+}
+
+h2{ /*titulo*/
+    color: #00337C;
+    font-size: 150px;  /*tamanho da fonte*/
+}
+
+p{
+    color: #000000;
+    font-size: 20px;    
+}
+
+
+button{
     padding: 10px 15px;
     border-radius: 8px;
-    background: #B3E5BE
-  }
+    border: 0; /*tira a borda do botão*/
+    font-weight: bold;
+    background: #95BDFF; /*cor do fundo do botao*/
+    color: black; /*cor da escreita*/
+    font-family: 'Montserrat', sans-serif;
+}
 
 header{
-    background:no-repeat center/cover url(/home/aluno/montefuji/assets/montefujii.jpg);
-    height: calc(100vh - 0px)
+    background: no-repeat center/cover url(/home/aluno/testesite/assets/montfuj.avif);
+    height: calc(100vh - 150px);
 }
+
+
+
 header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 90px;
 }
-header nav ul li{
-    margin: 0 15px;
+
+
+header nav p{ 
+    font-weight: bold;
+
 }
 
-.header-content {
-    max-width: 400px;
+header nav ul{ /*elementos un do lado do outro, canto direito*/ 
+    display: flex;
+}
+
+header nav ul li{ /*deixa um espacinho entre ele*/
+    margin: 0 15px 
+}
+
+.header-content{ /*organizou as escritas da esquerda no meio bonitinho*/ /*ponto antes, pq e uma clas*/
+    max-width: 400;
     margin: 150px auto;
+    text-align: center; /*escrita no meio*/
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.pacotes {
+    background: #014623;
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
     text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 200px;
+    background: white;
+    border-radius: 24px ;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px ;
+    object-fit: cover;
 }
