@@ -1,130 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*{ 
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
-
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: #ECF2FF; /*muda o fundo*/}
-
-ul{ /*lista nao ordenada*/
+    background: #ECF2FF; /*muda o fundo*/
+}
+ul { /*lista nao ordenada*/
     list-style: none;
     font-weight: bold; /*negrito*/
     color: #000000;
     font-size: 20px;
 }
-
 a{ /*mudar a cor do link*/
     text-decoration: none;
     color: inherit;  /*cor do link*/
 }
-
-h1{ /*info em baixo*/
-    color: #2f023d;
-    font-size: 40px;  /*tamanho da fonte*/
-
-}
-
-h2{ /*titulo*/
-    color: #00337C;
-    font-size: 150px;  /*tamanho da fonte*/
-}
-
-p{
-    color: #000000;
-    font-size: 20px;    
-}
-
-
 button{
     padding: 10px 15px;
     border-radius: 8px;
     border: 0; /*tira a borda do botão*/
     font-weight: bold;
-    background: #95BDFF; /*cor do fundo do botao*/
-    color: black; /*cor da escreita*/
+    background: #64e0c6; /*cor do fundo do botao*/
+    color: black; /*cor da escrita*/
     font-family: 'Montserrat', sans-serif;
+    font-size: 10;
 }
-
 header{
-    background: no-repeat center/cover url(/home/aluno/testesite/assets/montfuj.webp);
+    background:no-repeat center/cover url(assets/montfuj.webp);
     height: calc(100vh - 150px);
 }
-
-
 
 header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 90px;
 }
+header nav ul {
+    display: flex;  
+}
 
-
-header nav p{ 
+header button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0; /*tira a borda do botão*/
     font-weight: bold;
-
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10;
+    background: #6096B4;
 }
-
-header nav ul{ /*elementos un do lado do outro, canto direito*/ 
-    display: flex;
+header nav ul li{
+    margin: 0 15px;
 }
-
-header nav ul li{ /*deixa um espacinho entre ele*/
-    margin: 0 15px 
-}
-
-.header-content{ /*organizou as escritas da esquerda no meio bonitinho*/ /*ponto antes, pq e uma clas*/
-    max-width: 400;
+.header-content {
+    max-width: 400px;
     margin: 150px auto;
-    text-align: center; /*escrita no meio*/
+    text-align: center;
 }
-
+.header p{
+    color: #6096B4;
+}
 .header-content h1{
     margin-bottom: 10px;
     font-size: 4rem;
+    color: #6096B4;
 }
-
+.header-content p{
+    font-size: 1.2rem;
+}
 .pacotes {
-    background: #014623;
+    background: #CBE4DE ;
     padding: 15px;
 }
-
-.pacotes .pacotes-cards {
+.pacotes .pacotes-cards{
     display: flex;
     margin: auto;
     max-width: 950px;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.pacotes .pacotes-title {
+.pacotes .pacotes-tittle{
     width: 100%;
     text-align: center;
     margin: 25px 0;
+    color: #6096B4;
+    font-size: 2.5rem;
 }
-
-.pacotes .card {
+.pacotes .card{
     width: 250px;
-    height: 200px;
-    background: white;
-    border-radius: 24px ;
+    height: 450px;
+    background: #DDF7E3;
     margin: 25px;
     position: relative;
+    border-radius: 24px ;
 }
-
-.pacotes .card-image {
+.pacotes .cards-image{
     width: 250px;
     height: 200px;
     border-radius: 24px ;
     object-fit: cover;
 }
-
-.pacotes .card-content {
+.pacotes .card-content{
     padding: 0 15px;
 }
-
+.pacotes .card h1{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
 .pacotes .card-content ul{
     display: flex;
     flex-direction: column;
@@ -134,11 +120,116 @@ header nav ul li{ /*deixa um espacinho entre ele*/
     font-size: 0.6rem;
     display: flex;
     align-items: center;
+    margin: 3px;
     color: grey;
     font-weight: bold;
 }
-.pacotes .card-content li svg {
+.card .card-content ul li svg{
     width: 16px;
     height: 16px;
     margin-right: 10px;
+}
+.pacotes .card-content ul li h1{
+    font-size: 1rem;
+}
+.pacotes .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 8px 0 8px;
+    padding: 5px - 10px;
+}
+.pacotes .card .card-tag-buttom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px;
+    padding: 5px 10px;
+}
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+}
+.servicos{
+    padding: 15;
+}
+.servicos .servicos-tittle{
+    text-align: center;
+    margin: 35px 0;
+    color: #6096B4;
+    font-size: 3rem;
+}
+.servicos .servicos-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.servicos .card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50;
+    transition: all 1s;
+}
+.servicos .card svg:hover{
+    stroke: #1d61dd;
+    transform: scale(1.1);
+}
+.servicos .card h3{
+    font-weight: bold;
+}
+.servicos .card p{
+    color: gray;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+.contatos {
+    padding: 60px;
+    background:#CBE4DE;
+    position: relative;
+    text-align: right;
+}
+.contatos .contatos-card{
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;  
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contatos .contatos-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+.contatos .contatos-card li{
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
 }
