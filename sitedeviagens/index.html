@@ -1,91 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <title>Primeira Página</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Primeira Pagina</title>
+   <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!--Comentários de códigos HTML-->
-    <header>
-        <nav>
-            <p>IFPR Viagens</p>
-        
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#pacotes">Pacotes</a></li>
-                <li><a href="#serviços">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div id="home" class="header-content">
-            <h2>Monte Fuji</h2>
-            <p>Conheça o Monte Fuji, veja as belezas naturais desse lugar!</p>
-            <button>Saiba mais:</button>
-        </div>
-    </header>
-    <section id=" pacotes" class="pacotes">
-        <h1 class="pacotes-title">Conheça Nossos pacotes de viagem!</h1>
+       <!--
+           comentarios de códigos html
+       -->
+   <header>
+       <nav>
+           <p> IFPR Viagens </p>
+           
+           <ul>
+               <li> <a href="#home">Home</a></li>
+               <li> <a href="#pacotes">Pacotes</a></li>
+               <li> <a href="#servicos">Serviços</a></li>
+               <li> <a href="#contatos">Contatos</a></li>
+           </ul>
+       </nav>
+       <div id="home" class="header-content">
+          
+           <h1> Monte Fuji </h1>
+           <p> Conheça o Monte Fugi, veja as belezas naturais desse lugar:</p>
+           <button id="sabermais"> Saiba mais </button>
+       </div>
+   </header>
+
+   <section id="pacotes" class="pacotes"> 
+        <h1 class="pacotes-tittle"> Conheça nossos Pacotes de Viajens!! </h1>
 
         <div class="pacotes-cards">
-            <div class=" card">
-                <div class="card-tag card-top">
-                    <p>Promoção</p>
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p> Promoção!</p>
                 </div>
-                <div class="card-tag card-tag-bottom">
-                    <p>R$ 1.500,00</p>
+                <div class= "card-tag card-tag-buttom">
+                    <p> R$ 2.990,90</p>
                 </div>
-                <img class="card-image" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3b/95/61/photo2jpg.jpg?w=600&h=400&s=1" alt="Sydney">
-                <div class="card-content">
-                    <h1>Pacote 5 Noites Hotel Premium</h1>
+                <img class ="cards-image" src="https://www.segurospromo.com.br/blog/wp-content/uploads/2020/04/principais-cidades-do-canada.jpg" alt="Canadá">
+                <div class="card-Content">
+                    <h1>Pacotes 5 Noites Hotel Premium - Canadá</h1>
                     <ul>
-                        <li> <i data-feather="coffee"></i>Café da Manhã</li>
-                        <li> <i data-feather="wifi"></i>Wifi</li>
-                        <li> <i data-feather="briefcase"></i>Pet friendly</li>
-                    </ul>
+                        <li><i data-feather="coffee"></i> Cafe da manha incluso </li>
+                        <li><i data-feather="wifi"></i> Wifi </li>
+                        <li><i data-feather="briefcase"></i> Pet Friendly </li>
+                    </ul> 
                 </div>
             </div>
-            <div class=" card">
-                <div class="card-tag card-top">
-                    <p>Promoção</p>
+
+            <div class="pacotes-cards">
+                <div class="card">
+                    <div class="card-tag card-tag-top">
+                        <p> Promoção! </p>
+                    </div>
+                    <div class= "card-tag card-tag-buttom">
+                        <p> R$ 3.899,90</p>
+                    </div>
+                    <img class ="cards-image" src="https://www.segueviagem.com.br/wp-content/uploads/2020/07/Los-Angeles-EUA-shutterstock_396518245-scaled.jpg" alt="Los Angeles">
+                    <div class="card-Content">
+                        <h1>Pacotes 5 Noites Hotel Premium - Los Angeles</h1>
+                        <ul>
+                            <li><i data-feather="coffee"></i> Cafe da manha incluso </li>
+                            <li><i data-feather="wifi"></i> Wifi </li>
+                            <li><i data-feather="briefcase"></i> Pet Friendly </li>
+                        </ul> 
+                    </div>
                 </div>
-                <div class="card-tag card-tag-bottom">
-                    <p>R$ 1.500,00</p>
-                </div>
-                <img class="card-image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg" alt="Paris">
-                <div class="card-content">
-                    <h1>Pacote 5 Noites Hotel Premium</h1>
-                    <ul>
-                        <li> <i data-feather="coffee"></i>Café da Manhã</li>
-                        <li> <i data-feather="wifi"></i>Wifi</li>
-                        <li> <i data-feather="briefcase"></i>Pet friendly</li>
-                    </ul>
-                </div>
-            </div>
-            <div class=" card">
-                <div class="card-tag card-top">
-                    <p>Promoção</p>
-                </div>
-                <div class="card-tag card-tag-bottom">
-                    <p>R$ 1.500,00</p>
-                </div>
-                <img class="card-image" src="https://www.vounajanela.com/wp-content/uploads/2020/10/foz-1.jpg" alt="Foz do Iguaçu">
-                <div class="card-content">
-                    <h1>Pacote 5 Noites Hotel Premium</h1>
-                    <ul>
-                        <li> <i data-feather="coffee"></i>Café da Manhã</li>
-                        <li> <i data-feather="wifi"></i>Wifi</li>
-                        <li> <i data-feather="briefcase"></i>Pet friendly</li>
-                    </ul>
-                </div>
-            </div>
+
+                <div class="pacotes-cards">
+                    <div class="card">
+                        <div class="card-tag card-tag-top">
+                            <p> Promoção! </p>
+                        </div>
+                        <div class= "card-tag card-tag-buttom">
+                            <p> R$ 4.199,90</p>
+                        </div>
+                        <img class ="cards-image" src="https://www.visiteosusa.com.br/sites/default/files/styles/state_hero_l/public/images/hero_media_image/2017-05/a9f350f3face34b87e18a858c3d53dae.jpeg?h=4ebd21dc&itok=mYIuSukl" alt="Califórnia">
+                        <div class="card-Content">
+                            <h1>Pacotes 5 Noites Hotel Premium - Califórnia </h1>
+                            <ul>
+                                <li><i data-feather="coffee"></i> Cafe da manha incluso </li>
+                                <li><i data-feather="wifi"></i> Wifi </li>
+                                <li><i data-feather="briefcase"></i> Pet Friendly </li>
+                            </ul> 
+                        </div>
+                    </div>
         </div>
-    </section>
-    <script>
-         feather.replace()
-    </script>
+   </section>
+
+   <section id="servicos" class="servicos"> 
+        <h1 class="servicos-tittle"> Serviços </h1>
+        <div class="servicos-cards">
+
+            <div class="card">
+                <i data-feather="map"></i>
+                <div class="card-content">
+                    <h3>Tuors Guiados</h3>
+                    <p>Os tuors guiados são passeios realizados com auxilio de um guia, que além de dar informações sobre o local
+                        conduz o passeio!</p>
+                </div>
+                <button>Saiba Mais</button>
+                <div class="card-tops"></div>
+            </div>
+
+            <div class="card">
+                <i data-feather="camera"></i>
+                <div class="card-content">
+                    <h3>Fotografias Profissional</h3>
+                    <p>Certifique-se que voltará para casa não apenas com lembranças, mas que as memorias fique também nas fotos!!
+                        Contrate o nosso serviço! </p>
+                </div>
+                <button>Saiba Mais</button>
+                <div class="card-tops"></div>
+            </div>
+
+            <div class="card">
+                <i data-feather="navigation"></i>
+                <div class="card-content">
+                    <h3>Aluguel de Veiculos</h3>
+                    <p>Os tuors ficaram bem mais práticos e divertidos com a utilização dos nosos carros, eles ficam a sua disposição!!
+                        Conduza melhor o seu passeio!</p>
+                </div>
+                <button>Saiba Mais</button>
+                <div class="card-tops"></div>
+            </div>
+
+        </div>
+   </section>
+
+   <section id="contatos" class="contatos">
+        <div class="contatos-card">
+            <h1> Entre em Contato </h1>
+            <ul>
+                <li> <i data-feather="coffee"> </i> Av. das Pombas, 8080 </li>
+                <li> <i data-feather="mail"> </i> contato@ifprviagens.br </li>
+                <li> <i data-feather="phone"> </i> (45) 9999-9999 </li>
+            </ul>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26030.395396954013!2d138.70985379914703!3d35.360623737281166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMonte%20Fuji!5e0!3m2!1spt-BR!2sbr!4v1679496352086!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+   </section>
+
+   <script>
+    feather.replace()
+  </script>
 </body>
 </html>
